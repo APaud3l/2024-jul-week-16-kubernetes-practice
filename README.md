@@ -34,3 +34,19 @@ Core Kubernetes concepts:
 
 ### Control Plane
 - The "brains" of Kubernetes. Schedules Pods, tracks their health, makes decisions. 
+
+## Note
+If you have a containerised application, we can deploy that. 
+Steps:
+- Build it first. 
+- Then, login to Docker, and
+- Docker push it. Simple.
+
+# Differences between K8s and ECS
+
+Platform:       Open source               vs            AWS-only
+Portability:    Cloud agnostic         vs               AWS infra only
+Configure:      YAML                    vs              Task Definitions
+Autoscaling:    Built-in                vs              Integrated with AWS Auto Scaling
+Networking:     k8s networking model    vs              Uses load balancer integrations
+Cost:           Free to run, but costly to manage   vs  Fully managed and monitored by AWS
